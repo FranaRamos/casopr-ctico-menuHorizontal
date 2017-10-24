@@ -1,0 +1,43 @@
+body {
+	font-family: sans-serif;
+}
+
+nav {
+	/*outline: 1px solid red;*/
+}
+
+ul {
+	/*outline: 1px solid blue;*/
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background-color: #2e2e2a;
+	line-height: 40px; /*espacio entre-líneas*/
+	overflow: auto;
+}
+
+li {
+	/*outline: 1px solid yellow;*/
+	width: 100px;
+	/*display: inline-block; le decimos a un bloque que se comporte como
+	 inline sin que pierda la propiedad de modificar su tamaño como los bloques*/
+	 /*Si quiero poner mis listas una al lado de la otra tenemos el otro
+	 método que es float*/
+	 float: left; /*Veo el li pero no el contenedor, porque me quita de contexto
+	 mi contenedor, para eso debo poner overflow: auto. para poder visualizar el ul*/
+	 text-align: center;
+}
+
+a {
+	/*outline: 1px solid green;*/	
+	text-decoration: none;
+	/*color: #fff;*/
+	display: block; /*le decimos a anchor que se adapte a su etiqueta padre
+	que sería li.*/
+	color: #fff;
+}
+
+a:hover {
+	background-color: #f9a91a;
+	color: #000;
+}
